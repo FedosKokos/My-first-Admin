@@ -34,7 +34,9 @@ npm install
 
 3. Запустите сервер:  
 ```bash
-node app.js
+npm start
+или
+node server/server.js
 ```
 
 4. Откройте в браузере:  
