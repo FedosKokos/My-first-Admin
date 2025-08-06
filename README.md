@@ -78,7 +78,7 @@ const connection = await mysql.createConnection({
 - Используйте кнопки для управления данными  
 - Вводите и запускайте SQL-запросы через интерфейс
 
----
+
 
 ## Технологии
 
@@ -87,7 +87,6 @@ const connection = await mysql.createConnection({
 - Fetch API для запросов  
 - JSON для обмена данными
 
----
 
 
 
