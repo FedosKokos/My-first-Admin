@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Админка</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+        <div class="left-block">
+            <div class="left-block-content">
+                <div class="select-db-block" id="select-db-table-block">
+                    <p>Выбранная БД: <span id="selected-db"></span></p>
+                    <p>таблица: <span id="selected-table"></span></p>
+                    <button id="back-to-tables-btn">Вернуться к таблицам</button>
+                    <button onclick="location.href = '/'">Вернуться на главную</button>
+                </div>
+            </div>
+        </div>  
+        <div class="operations-block">
+            <div class="operations-block-content">
+                <button id="update-btn">Обновить</button>
+                <button id="insert-btn">Добавить</button>
+                <button id="delete-btn">Удалить</button>
+                <button id="change-btn">Изменить</button>
+                <button id="sql-btn">SQL</button>
+                <button id="import-btn">Импорт</button>
+                <button id="export-btn">Экспорт</button>
+            </div>
+        </div>
+        <div class="right-block">
+            <div class="right-block-content" id="right-block-content">
+            </div>
+        </div>
+    </main>
+    <script src="/edittablescript.js"></script>
+</body>
+</html></html>

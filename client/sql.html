@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Админка</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+        <div class="left-block">
+            <div class="left-block-content">
+                <div class="select-db-block" id="select-db-table-block">
+                    <p>Выбранная БД: <span id="selected-db"></span></p>
+                    <p>таблица: <span id="selected-table"></span></p>
+                </div>
+            </div>
+        </div>  
+        <div class="operations-block">
+            <div class="operations-block-content">
+                <button id="back-btn">Назад</button>
+                <button id="insert-btn">Добавить</button>
+                <button id="delete-btn">Удалить</button>
+                <button id="change-btn">Изменить</button>
+                <button id="import-btn">Импорт</button>
+                <button id="export-btn">Экспорт</button>
+            </div>
+        </div>
+        <div class="right-block">
+            <div class="right-block-content" id="right-block-content">
+                <h2>SQL-запрос</h2>
+                <textarea class="sql-textarea" id="sql-query" placeholder="Введите SQL-запрос здесь..."></textarea>
+                <div style="margin-top: 18px; text-align: right;">
+                    <button class="main-btn" id="run-insert-btn">INSERT</button>
+                    <button class="main-btn" id="run-update-btn">UPDATE</button>
+                    <button class="main-btn" id="run-delete-btn">DELETE</button>
+                    <button class="main-btn" id="run-clear-btn">Очистить</button>
+                    <button class="main-btn" id="run-sql-btn">Выполнить</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/sql.js"></script>
+</body>
+</html>
