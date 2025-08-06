@@ -70,9 +70,9 @@ const connection = await mysql.createConnection({
     user: 'root',
     password: '',
     database: 'your_database_name'
-});
+});```
 
----
+
 ## Использование
 
 - Перейдите на страницу с параметрами базы и таблицы  
