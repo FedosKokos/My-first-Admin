@@ -72,6 +72,7 @@ const connection = await mysql.createConnection({
     database: 'your_database_name'
 });
 
+---
 ## Использование
 
 - Перейдите на страницу с параметрами базы и таблицы  
