@@ -24,7 +24,7 @@
 
 1. Клонируйте репозиторий:  
 ```bash
-git clone <url>
+git clone https://github.com/FedosKokos/My-first-Admin/blob/master/README.md
 ```
 
 2. Установите зависимости:  
