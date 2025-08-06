@@ -39,12 +39,38 @@ npm start
 node server/server.js
 ```
 
+
 4. Откройте в браузере:  
 ```
 http://localhost:3000/
 ```
 
 ---
+
+
+## Подключение к Apache и MySQL
+
+Этот проект рассчитан на работу с веб-сервером Apache и базой данных MySQL, которые обычно устанавливаются через XAMPP.
+
+### Apache
+
+- Apache должен быть запущен (обычно на порту 80).
+- Node.js сервер запускается отдельно и слушает свой порт (например, 3000).
+- Для удобства можно настроить в Apache проксирование (через `mod_proxy`), чтобы перенаправлять запросы на Node.js, либо запускать их параллельно.
+
+### MySQL
+
+- MySQL сервер должен быть запущен (обычно на порту 3306).
+- В файле конфигурации приложения (например, в `app.js`) укажи параметры подключения к MySQL:
+
+```js
+const mysql = require('mysql2/promise');
+const connection = await mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'your_database_name'
+});
 
 ## Использование
 
