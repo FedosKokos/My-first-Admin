@@ -24,7 +24,7 @@
 
 1. Клонируйте репозиторий:  
 ```bash
-git clone https://github.com/FedosKokos/My-first-Admin/blob/master/README.md
+git clone https://github.com/FedosKokos/My-first-Admin.git
 ```
 
 2. Установите зависимости:  
@@ -35,10 +35,9 @@ npm install
 3. Запустите сервер:  
 ```bash
 npm start
-или
+# или
 node server/server.js
 ```
-
 
 4. Откройте в браузере:  
 ```
@@ -46,7 +45,6 @@ http://localhost:3000/
 ```
 
 ---
-
 
 ## Подключение к Apache и MySQL
 
@@ -71,23 +69,21 @@ const connection = await mysql.createConnection({
     password: '',
     database: 'your_database_name'
 });
+```
 
+---
 
-### Использование
+## Использование
 
 - Перейдите на страницу с параметрами базы и таблицы  
 - Используйте кнопки для управления данными  
 - Вводите и запускайте SQL-запросы через интерфейс
 
+---
 
-
-### Технологии
+## Технологии
 
 - Node.js, Express  
 - Чистый JavaScript на клиенте  
 - Fetch API для запросов  
 - JSON для обмена данными
-
-
-
-
